@@ -1,0 +1,268 @@
+@font-face{
+ font-family:"lemon-jelly";
+  src: url("./fonts/LemonJellyPersonalUse-dEqR.ttf") format("truetype");
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  color: #2F4F4F;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 1.58;
+}
+
+header {
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+}
+
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 6px 0 6px 20px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 30px;
+      letter-spacing: 2px;
+      font-family: 'Abril Fatface', cursive;
+}
+
+nav {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  height: 80px;
+  padding-bottom: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+      /* background-color: #000000; */
+}
+
+nav ul {
+      line-height: 30px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+      /* background: #000000 */
+}
+
+nav.black ul {
+      background: #000000;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;;
+}
+
+nav .logo img{
+ width: 80px;
+ height: 70px;
+}
+
+@media(max-width: 1024px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+
+      nav.black ul {
+            background-color: #fff;
+      }
+
+}
+
+.status{
+ width: 100%;
+ height: 100vh;
+ position: relative;
+ display: inline-block;
+}
+
+.card{
+ background: none;
+ border: none;
+}
+
+.sub-tag{
+ color: #fff;
+ font-size: 40px;
+ font-family: 'Abril Fatface', cursive;
+ text-align: center;
+ z-index: 100;
+ position: absolute;
+}
+
+.sub-tag::before{
+ content: '';
+ display: inline-block;
+ height: 100%;
+ vertical-align: middle;
+}
+
+.sub-tag p{
+ margin: 0;
+}
+
+.sub-tag .project-desc {
+ margin:0;
+ padding-top: 120px;
+ font-size: 32px;
+ letter-spacing: 1.5px;
+}
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slidy infinite;
+}
+
+#slider img{
+ display: block;
+  height: 95vh;
+  filter: brightness(30%);
+  position: relative;
+  margin: 0 auto;
+}
+
+.status .title{
+ /* font-family: 'lemon-jelly'; */
+ color:#fff;
+ font-size: 80px;
+ font-weight: 500;
+ margin-top: 120px;
+}
+
+#front-text p {
+    margin-top: 150px;
+    font-size: 32px;
+    text-align: center;
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.message-block {
+  padding: 70px 0px;
+}
+
+.message-block h1{
+  color: #800000;
+  margin-left: 50px;
+}
+
+.message-block img{
+  height: 350px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.message-block .content{
+  display:flex;
+  align-items: center;
+  margin-top: 30px;
+  padding: 55px 0px;
+}
+
+.message-block .content p{
+  font-size: 22px;
+}
+
+hr {
+  border:none;
+  height: 20px;
+ 	width: 60%;
+	height: 50px;
+	margin-top: 0;
+	border-bottom: 1px solid #1f1209;
+  margin: -50px auto 10px;
+}
+
+footer{
+ position: absolute;
+ width: 100%;
+ overflow: auto;
+ background: #16222A;
+ background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+ background: linear-gradient(59deg, #3A6073, #16222A);
+ color: white;
+}
