@@ -21,15 +21,15 @@ body {
 }
 
 .logo {
-      line-height: 60px;
-      position: fixed;
-      float: left;
-      margin: 6px 0 6px 20px;
-      color: #fff;
-      font-weight: bold;
-      font-size: 30px;
-      letter-spacing: 2px;
-      font-family: 'Abril Fatface', cursive;
+  line-height: 60px;
+  position: fixed;
+  float: left;
+  margin: 6px 0 6px 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: 'Abril Fatface', cursive;
 }
 
 nav {
@@ -41,9 +41,9 @@ nav {
   height: 80px;
   padding-bottom: 10px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  background: #000000;
-  background: -webkit-linear-gradient(59deg, #000000, #696969);
-  background: linear-gradient(59deg, #000000, #696969);
+  background: #0a1172;
+  background: -webkit-linear-gradient(59deg, #0a1172, #fff);
+  background: linear-gradient(59deg, #0a1172, #fff);
       /* background-color: #000000; */
 }
 
@@ -63,31 +63,34 @@ nav .logo img{
 
 }
 
+#div1, #div2, #div3, #div4 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 6px;
+}
+
 .title-block{
  width: 100%;
  margin-bottom: 100px;
 }
 
 .main-title {
-  color:#fff;
-  font-size: 80px;
+  font-size: 90px;
   font-weight: 500;
   text-align: center;
-  color: #000000;
+  color: #00008B;
   margin: 0;
+  font-family: 'Abril Fatface', cursive;
 }
 
 .sub-title {
   margin:0;
-  font-size: 32px;
+  font-size: 38px;
   letter-spacing: 1.5px;
-  font-size: 32px;
   text-align: center;
-  color: #000000;
+  color: #00008B;
 }
 
 #front-text p {
-  font-family: 'Abril Fatface', cursive;
   margin: 0;
   animation: fadein 4s;
   -moz-animation: fadein 4s; /* Firefox */
@@ -95,10 +98,15 @@ nav .logo img{
   -o-animation: fadein 4s; /* Opera */
 }
 
+.image-block {
+  padding: 0;
+  border-radius: 6px;
+}
+
 .image-block img {
   width: 100%;
   height: 650px;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 @media(max-width: 1024px) {
@@ -116,7 +124,7 @@ nav .logo img{
 
 .message-block h1{
   color: #800000;
-  margin-left: 60px;
+  margin-left: 10px;
   text-align: center;
 }
 
@@ -142,12 +150,17 @@ hr {
 }
 
 .contact-block {
-	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+	/* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ); */
+  /* background: linear-gradient(#2396bf, #0d5b77 40%, #004961 3%, #004961); */
+/* background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%); */
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 	font-size: 22px;
 	margin: 110px 0;
 	padding:30px;
 	border-radius:8px;
-	box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	/* box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
 .input-container{
@@ -159,14 +172,14 @@ hr {
 	top:0px;
 	left:0px;
 	font-size:16px;
-	color:#fff;	
+	color:#000000;	
  pointer-events:none;
 	transition: all 0.5s ease-in-out;
 }
 .input-container input,
 .input-container textarea{ 
-  border:0;
-  border-bottom:1px solid #555;
+  border: 0;
+  /* border:1px solid #555; */
   width:100%;
   padding:8px 0 5px 0;
   font-size:16px;
@@ -188,9 +201,9 @@ footer{
  position: absolute;
  width: 100%;
  overflow: auto;
- background: #000000;
- background: -webkit-linear-gradient(59deg, #000000, #696969);
- background: linear-gradient(59deg, #000000, #696969);
+ background: #0a1172;
+ background: -webkit-linear-gradient(59deg, #0a1172, #fff);
+ background: linear-gradient(59deg, #0a1172, #fff);
  color: white;
 }
 
