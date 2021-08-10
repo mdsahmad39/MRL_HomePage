@@ -55,17 +55,18 @@ nav .logo img{
 
 @media(max-width: 1024px) {
 
-      .logo {
-            position: fixed;
-            top: 0;
-            margin-top: 16px;
-      }
+  .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+  }
 
 }
 
 #div1, #div2, #div3, #div4 {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   border-radius: 6px;
+  margin-bottom: 50px;
 }
 
 .title-block{
