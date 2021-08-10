@@ -1,6 +1,6 @@
 var divBlocks = ['div1', 'div2', 'div3'], n = 0, limit = 3;
 
-var interval = setInterval(blockDisplay, 2000);
+var interval = setInterval(blockDisplay, 15000);
 
 function blockDisplay() {
   if (n > 2) {
